@@ -1,15 +1,15 @@
 class Argocui < Formula
   desc "Managing Argo resource by CUI."
   homepage "https://github.com/hanjunlee/argocui"
-  version "0.0.2"
+  version "0.0.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/hanjunlee/argocui/releases/download/v0.0.2/argocui_darwin_amd64.tar.gz"
-    sha256 "d118717b3026dd557882cb5d4baa465678e67dc8940fc6dc9652a3011626ad5a"
+    url "https://github.com/hanjunlee/argocui/releases/download/v0.0.3/argocui_darwin_amd64.tar.gz"
+    sha256 "f665a96c6deb6200ed3afe1aaf7f0e2710701cbc5a184619eb109875b4033303"
   elsif OS.linux?
-    url "https://github.com/hanjunlee/argocui/releases/download/v0.0.2/argocui_linux_amd64.tar.gz"
-    sha256 "960537e93e7700e1d6fbe50907d0fba9b93ebffb4c0dc7b2f99d6df4be59a6de"
+    url "https://github.com/hanjunlee/argocui/releases/download/v0.0.3/argocui_linux_amd64.tar.gz"
+    sha256 "306ebac236a99d446973fdbb16755082bc3e8a482c0ee6af6ac8c4d40258ffc7"
   end
 
   def install
@@ -17,7 +17,7 @@ class Argocui < Formula
   end
 
   test do
-    system "argocui -h"
+    system "argocui -version"
   end
 end
   
